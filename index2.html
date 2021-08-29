@@ -1,0 +1,50 @@
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ajouter un utilisateur</title>
+    <!-- import du script js script2.js -->
+    <script src="./script2.js" defer></script>
+    <!-- import du style css style.css -->
+    <link rel="stylesheet" href="./style.css">
+    <!-- import de la police Roboto de Google -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h2>Créer des utilisateurs :</h2>
+    <form>
+        <p>saisir un nom :</p>
+        <p><input type="text" id="name"></p>
+        <p>saisir un prénom :</p>
+        <p><input type="text" id="firstName"></p>
+        <p>saisir un login :</p>
+        <p><input type="text" id="login"></p>
+        <p>saisir un mot de passe :</p>
+        <p><input type="password" id="mdp"></p>
+        <p><input type="button" value="Ajouter" onclick="ajouter()"></p>
+    </form>
+    <h3 id ="error"></h3>
+    <h2>Liste des comptes utilisateurs créés :</h2>
+    <h3 id ="nbrCompte">Il n'y à aucun compte utilisateur</h3>
+    <p id="resultat"></p>
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Modifier le compte utilisateur :</h2>
+            <p>saisir un nom :</p>
+            <p><input id="name1"></p>
+            <p>saisir un prénom :</p>
+            <p><input id="firstName1"></p>
+            <p>saisir un login :</p>
+            <p><input id="login1"></p>
+            <p>saisir un mot de passe :</p>
+            <p><input type="password" id="mdp1"></p>
+            <p id="btUpdate"></p>
+        </div>
+    </div>
+</body>
+</html>
